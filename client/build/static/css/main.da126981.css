@@ -47,21 +47,17 @@ p {
   border-radius: 15px !important;
 }
 
-.login {
-  padding: 150px 15px;
+.login, .register {
+  padding: 50px 15px;
 }
 
 .heading {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 2em; /* Adjust the size as needed */
-  color: #1677ff;; /* Customize the color */
+  color: #1677ff; /* Customize the color */
   text-align: center; /* Center the heading */
   margin-bottom: 20px; /* Space below the heading */
-}
-
-.register {
-  padding: 50px 15px;
 }
 
 input, textarea {
@@ -75,5 +71,129 @@ input, textarea {
 
 .anticon.anticon-user svg {
   margin-right: 10px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 24px !important;
+  }
+  
+  .heading {
+    font-size: 1.5em; /* Adjust the size as needed */
+  }
+
+  .login, .register {
+    padding: 20px 10px;
+  }
+
+  .job-div {
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .flex.justify-content-between {
+    justify-content: space-between;
+    align-items: flex-start !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 20px !important;
+  }
+
+  .heading {
+    font-size: 1.2em; /* Adjust the size as needed */
+  }
+
+  .login, .register {
+    padding: 10px 5px;
+  }
+
+  .job-div {
+    margin: 5px 0;
+    padding: 5px;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .flex.justify-content-between {
+    justify-content: space-between;
+    align-items: flex-start !important;
+  }
+}
+
+/* General Flexbox class for alignment */
+.flex {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.header-username {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .header-username {
+    display: none;
+  }
+
+  .header-content {
+    flex-direction: row !important;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .header-content > div {
+    flex: 1;
+  }
+
+  .filter-container {
+    position: relative;
+    top: 10px; /* Adjust this value to move down */
+    left: -10px; /* Adjust this value to move left */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-username {
+    display: none;
+  }
+
+  .header-content {
+    flex-direction: row !important;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .header-content > div {
+    flex: 1;
+  }
+
+  .filter-container {
+    position: relative;
+    top: 20px; /* Adjust this value to move down */
+    left: -16px; /* Adjust this value to move left */
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-on-small {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.da126981.css.map*/
